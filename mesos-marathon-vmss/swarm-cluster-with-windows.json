@@ -82,6 +82,17 @@
         "description": "The number of Swarm masters for the cluster."
       }
     },
+    "masterVMSize": {
+      "type": "string",
+      "defaultValue": "Standard_D2_v2",
+      "allowedValues": [
+        "Standard_D2_v2", 
+        "Standard_A1"
+      ],
+      "metadata": {
+        "description": "The size of Swarm masters for the cluster"
+      }
+    },
     "agentVMSize": {
       "type": "string",
       "defaultValue": "Standard_D2_v2",
