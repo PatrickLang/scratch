@@ -235,6 +235,7 @@
     "agentCount": "[parameters('agentCount')]",
     "masterCount": "[parameters('masterCount')]",
     "agentVMSize": "[parameters('agentVMSize')]",
+    "masterVMSize": "[parameters('masterVMSize')]",
     "sshRSAPublicKey": "[parameters('sshRSAPublicKey')]",
     "windowsAdminUsername": "[parameters('windowsAdminUsername')]",
     "windowsAdminPassword": "[parameters('windowsAdminPassword')]",
