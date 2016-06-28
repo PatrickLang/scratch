@@ -690,14 +690,12 @@
         "[variables('masterStorageAccountName')]",
         "[variables('diagnosticsStorageAccountName')]"
       ],
-      "sku": {
-        "name": "[variables('masterVMSize')]",
-        "tier": "Standard",
-        "capacity": "[variables('masterCount')]"
-      },
       "properties": {
         "availabilitySet": {
           "id": "[resourceId('Microsoft.Compute/availabilitySets',variables('masterAvailabilitySet'))]"
+        },
+        "hardwareProfile": {
+          "vmSize": "[variables('masterVMSize')]"
         },
         "osProfile": {
           "computername": "[concat(variables('masterVMNamePrefix'), copyIndex())]",
